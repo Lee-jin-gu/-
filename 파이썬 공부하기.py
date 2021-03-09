@@ -20,7 +20,7 @@ async def on_ready():
 
     print("ready")
 
-    game = discord.Game("GitHub_Lee-jin-gu")
+    game = discord.Game("세명")
 
     await client.change_presence(status=discord.Status.online, activity=game)
 
