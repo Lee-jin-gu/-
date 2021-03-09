@@ -1,5 +1,7 @@
 import discord
 
+import os
+
 import asyncio
 
 import datetime
@@ -84,4 +86,6 @@ async def on_message(message):
         embed.add_field(name="오늘급식", value=f"{site1}", inline=True)
 
         await message.channel.send(embed=embed)
+        
+access_token = os.environ["BOT_TOKEN"]
 client.run('Token')
